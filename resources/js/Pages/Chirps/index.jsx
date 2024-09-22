@@ -30,7 +30,6 @@ export default function Index({ auth, chirps }) {
                     <InputError message={errors.message} className="mt-2" />
                     <PrimaryButton className="mt-4" disabled={processing}>Chirp</PrimaryButton>
                 </form>
-
                 <div className="mt-6 bg-white shadow-sm rounded-lg divide-y">
                     {chirps.map(chirp =>
                         <Chirp key={chirp.id} chirp={chirp} />
